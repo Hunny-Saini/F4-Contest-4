@@ -1,3 +1,4 @@
+import React from "react";
 import Navigation from "./Components/Navigation";
 import Signup from "./Components/Signup";
 import Profile from "./Components/Profile";

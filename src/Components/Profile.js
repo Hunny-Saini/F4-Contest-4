@@ -8,7 +8,7 @@ const Profile = () => {
     useEffect(() => {
         
         if (!user || !user.accessToken) {
-          navigate('/signup');
+          navigate('/');
         }
     }, [navigate, user]);
 

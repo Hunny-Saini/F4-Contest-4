@@ -9,7 +9,6 @@ const App = () => {
             <Navigation />
             <Routes>
                 <Route exact path="/" element={<Signup />} />
-                <Route path="/signup" element={<Signup />} />
                 <Route path="/profile" element={<Profile />} />
             </Routes>
             

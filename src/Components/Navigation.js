@@ -1,12 +1,13 @@
-
+import React from "react";
+import { Link, useNavigate } from "react-router-dom";
 
 const Navigation = () => {
     return (
         <nav>
             <p>Header</p>
             <div className="links-container">
-                <div className="signup"><a href="/">Signup</a></div>
-                <div className="profile"><a href="/profile">Profile</a></div>
+                <div className="signup"><Link to="/">Signup</Link></div>
+                <div className="profile"><Link to="/profile">Profile</Link></div>
             </div>
         </nav>
     )

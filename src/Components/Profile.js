@@ -16,7 +16,7 @@ const Profile = () => {
         
         localStorage.removeItem('user');
         
-        navigate('/signup');
+        navigate('/');
     };
 
     return(

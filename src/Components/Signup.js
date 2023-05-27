@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import { useNavigate } from "react-router-dom";
 
 const Signup = () => {
@@ -9,6 +9,13 @@ const Signup = () => {
     let [cpassword,setCPassword] = useState("");
     let [error,setError] = useState("");
     let [success,setSuccess] = useState("");
+
+    useEffect(() => {
+      const storedUser = localStorage.getItem("user");
+      if (storedUser) {
+        navigate("/Profile");
+      }
+    }, [navigate]);
 
     const signupUser = () => {
         if (!fullName || !email || !password || !cpassword) {

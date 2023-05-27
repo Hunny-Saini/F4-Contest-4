@@ -6,11 +6,11 @@ import {Routes, Route} from "react-router-dom";
 const App = () => {
     return (
         <div>
-                <Navigation />
+            <Navigation />
             <Routes>
-                <Route exact path="/" component={Signup} />
-                <Route path="/signup" component={Signup} />
-                <Route path="/profile" component={Profile} />
+                <Route exact path="/" element={<Signup />} />
+                <Route path="/signup" element={<Signup />} />
+                <Route path="/profile" element={<Profile />} />
             </Routes>
             
         </div>
